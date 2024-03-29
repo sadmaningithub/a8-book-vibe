@@ -1,9 +1,11 @@
+import Books from "../Books/Books";
+
 
 
 const Home = () => {
     return (
         <div>
-            <h2>Hello!</h2>
+            <Books></Books>
         </div>
     );
 };

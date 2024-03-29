@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/TKk5hyy/book1.png",
+      "tags": ["fiction", "thriller", "mystery"],
+      "bookName": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "category": "Thriller",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/Smw9GfN/book2.png",
+      "tags": ["fantasy", "magic", "adventure"],
+      "bookName": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/87CRGTq/book3.png",
+      "tags": ["self-help", "motivation", "success"],
+      "bookName": "The 7 Habits of Highly Effective People",
+      "author": "Stephen R. Covey",
+      "category": "Self-Help",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/nzNg6gN/book4.png",
+      "tags": ["science fiction", "dystopian", "adventure"],
+      "bookName": "1984",
+      "author": "George Orwell",
+      "category": "Science Fiction",
+      "rating": 4.4
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/cbT44qt/book5.png",
+      "tags": ["historical fiction", "romance", "drama"],
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "category": "Fiction",
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/ZLdT5X0/book6.png",
+      "tags": ["biography", "autobiography", "inspiration"],
+      "bookName": "Steve Jobs",
+      "author": "Walter Isaacson",
+      "category": "Biography",
+      "rating": 4.3
+    }
+  ]
+  
