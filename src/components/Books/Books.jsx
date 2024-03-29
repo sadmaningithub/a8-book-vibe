@@ -8,9 +8,9 @@ const Books = () => {
 
     useEffect(() => {
         fetch('/public/books.json')
-        .then(res => res.json())
-        .then(data => setBooks(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setBooks(data))
+    }, [])
 
 
 
@@ -18,9 +18,12 @@ const Books = () => {
         <div>
             <div className="mt-24 mb-9">
                 <h1 className="font-playfair text-4xl font-bold text-center">Books:{books.length}</h1>
-                {
-                    books.map(book => <Book key={books.id} book={book}></Book>)
-                }
+                <div className='grid grid-cols-3 gap-6 flex-grow'>
+                    {
+                        books.map(book => <Book key={books.id} book={book}></Book>)
+                    }
+                </div>
+
             </div>
 
         </div>

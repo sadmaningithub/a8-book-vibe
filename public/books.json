@@ -4,53 +4,77 @@
       "image": "https://i.ibb.co/TKk5hyy/book1.png",
       "tags": ["fiction", "thriller", "mystery"],
       "bookName": "The Da Vinci Code",
+      "review": "The Great Gatsby is a timeless classic that delves into themes of love, wealth, and the American Dream. F. Scott Fitzgerald's masterful storytelling and vivid imagery transport readers to the extravagant world of 1920s New York. With its richly drawn characters and poignant narrative, this novel continues to resonate with readers of all generations.",
       "author": "Dan Brown",
       "category": "Thriller",
-      "rating": 4.2
+      "publisher": "Allen & Unwin",
+      "rating": 4.2,
+      "totalPages": 279,
+      "yearOfPublishing": 1813
     },
     {
       "id": 2,
       "image": "https://i.ibb.co/Smw9GfN/book2.png",
       "tags": ["fantasy", "magic", "adventure"],
       "bookName": "Harry Potter and the Sorcerer's Stone",
+      "review": "To Kill a Mockingbird is a powerful novel that tackles issues of racial injustice and moral growth in the American South. Harper Lee's poignant storytelling and memorable characters, including the courageous Atticus Finch and the curious Scout, make this book a timeless classic. Through its compelling narrative and thought-provoking themes, To Kill a Mockingbird continues to be a beloved and influential work of literature.",
       "author": "J.K. Rowling",
       "category": "Fantasy",
-      "rating": 4.5
+      "publisher": "Allen & Unwin",
+      "rating": 4.5,
+      "totalPages": 279,
+      "yearOfPublishing": 1813
     },
     {
       "id": 3,
       "image": "https://i.ibb.co/87CRGTq/book3.png",
       "tags": ["self-help", "motivation", "success"],
       "bookName": "The 7 Habits of Highly Effective People",
+      "review": "1984 is a dystopian novel that paints a bleak picture of a totalitarian society where individual freedom is suppressed and truth is manipulated by those in power. George Orwell's chilling portrayal of surveillance, propaganda, and thought control remains eerily relevant in today's world. With its compelling narrative and thought-provoking themes, 1984 serves as a stark warning against the dangers of authoritarianism and the erosion of civil liberties.",
       "author": "Stephen R. Covey",
       "category": "Self-Help",
-      "rating": 4.7
+      "publisher": "Allen & Unwin",
+      "rating": 4.7,
+      "totalPages": 279,
+      "yearOfPublishing": 1813
     },
     {
       "id": 4,
       "image": "https://i.ibb.co/nzNg6gN/book4.png",
       "tags": ["science fiction", "dystopian", "adventure"],
       "bookName": "1984",
+      "review": "The Catcher in the Rye is a coming-of-age novel that follows the disillusioned teenager Holden Caulfield as he navigates the challenges of adolescence and the adult world. J.D. Salinger's iconic protagonist and candid narrative style have made this book a cultural touchstone for generations. Through its exploration of alienation, identity, and innocence, The Catcher in the Rye continues to resonate with readers worldwide.",
       "author": "George Orwell",
       "category": "Science Fiction",
-      "rating": 4.4
+      "publisher": "Allen & Unwin",
+      "rating": 4.4,
+      "totalPages": 279,
+      "yearOfPublishing": 1813
     },
     {
       "id": 5,
       "image": "https://i.ibb.co/cbT44qt/book5.png",
       "tags": ["historical fiction", "romance", "drama"],
       "bookName": "Pride and Prejudice",
+      "review": "Pride and Prejudice is a delightful romantic comedy that follows the spirited Elizabeth Bennet as she navigates the complexities of love and social status in 19th-century England. Jane Austen's sharp wit and keen observations of human nature shine through in this beloved novel, making it a timeless classic. With its memorable characters and sparkling dialogue, Pride and Prejudice continues to enchant readers of all ages.",
       "author": "Jane Austen",
       "category": "Fiction",
-      "rating": 4.6
+      "publisher": "Allen & Unwin",
+      "rating": 4.6,
+      "totalPages": 279,
+      "yearOfPublishing": 1813
     },
     {
       "id": 6,
       "image": "https://i.ibb.co/ZLdT5X0/book6.png",
       "tags": ["biography", "autobiography", "inspiration"],
       "bookName": "Steve Jobs",
+      "review": "The Hobbit is a captivating adventure that follows the unlikely hero Bilbo Baggins as he embarks on a quest to reclaim the treasure guarded by the fearsome dragon Smaug. J.R.R. Tolkien's enchanting storytelling and richly imagined world of Middle-earth make this book a timeless classic. With its memorable characters, thrilling adventures, and themes of courage and friendship, The Hobbit continues to enchant readers of all ages.",
       "author": "Walter Isaacson",
       "category": "Biography",
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1937,
+      "totalPages": 279,
       "rating": 4.3
     }
   ]
