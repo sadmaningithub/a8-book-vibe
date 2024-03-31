@@ -1,49 +1,100 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import PropTypes from 'prop-types';
+
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
 const data = [
     {
-        "id": 1,
-        "bookName": "The Da Vinci Code",
-        "popularity": 8.2
+        name: 'Page A',
+        uv: 4000,
+        pv: 2400,
+        amt: 2400,
     },
     {
-        "id": 2,
-        "bookName": "Harry Potter and the Sorcerer's Stone",
-        "popularity": 9.1
+        name: 'Page B',
+        uv: 3000,
+        pv: 1398,
+        amt: 2210,
     },
     {
-        "id": 3,
-        "bookName": "The 7 Habits of Highly Effective People",
-        "popularity": 9.5
+        name: 'Page C',
+        uv: 2000,
+        pv: 9800,
+        amt: 2290,
     },
     {
-        "id": 4,
-        "bookName": "1984",
-        "popularity": 8.9
+        name: 'Page D',
+        uv: 2780,
+        pv: 3908,
+        amt: 2000,
     },
     {
-        "id": 5,
-        "bookName": "Pride and Prejudice",
-        "popularity": 8.7
+        name: 'Page E',
+        uv: 1890,
+        pv: 4800,
+        amt: 2181,
     },
     {
-        "id": 6,
-        "bookName": "Steve Jobs",
-        "popularity": 8.4
-    }
-]
+        name: 'Page F',
+        uv: 2390,
+        pv: 3800,
+        amt: 2500,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+];
 
+const getPath = (x, y, width, height) => {
+    return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+  ${x + width / 2}, ${y}
+  C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+  Z`;
+};
+
+const TriangleBar = (props) => {
+    console.log(props)
+    const { fill, x, y, width, height } = props;
+
+    return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
+};
 
 const PagesToRead = () => {
     return (
-        <LineChart width={5000} height={400} data={data}>
-            <Line type="monotone" dataKey="popularity" stroke="#8884d8" />
-            <XAxis dataKey="bookName" />
-            <YAxis dataKey='popularity' />
-            <Tooltip />
-            <Legend />
-        </LineChart>
+        <BarChart
+            width={500}
+            height={300}
+            data={data}
+            margin={{
+                top: 20,
+                right: 30,
+                left: 20,
+                bottom: 5,
+            }}
+        >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                {data.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                ))}
+            </Bar>
+        </BarChart>
     );
+};
+
+
+TriangleBar.propTypes = {
+    fill: PropTypes.string.isRequired,
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
 };
 
 export default PagesToRead;
